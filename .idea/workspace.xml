@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="WebServerJava:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,16 +24,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb62ba10-5a1e-435a-8e0d-a5f1cb2907e8" name="Default Changelist" comment="Version 0.0. The project is created and configured." />
+    <list default="true" id="fb62ba10-5a1e-435a-8e0d-a5f1cb2907e8" name="Default Changelist" comment="Version 0.0. The project is created and configured.">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/WebServerJava_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/WebServerJava_jar/WebServerJava.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/kapablankaNew/simpleWebServer/AllRequestsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/kapablankaNew/simpleWebServer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META_INF/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META_INF/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/kapablankaNew/simpleWebServer/AllRequestsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/kapablankaNew/simpleWebServer/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1f6O2JaIwFxSiMptRbTB1B0WS4w" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +67,32 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/META_INF" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.kapablankaNew.simpleWebServer.Main" />
+      <module name="WebServerJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.org.kapablankaNew.simpleWebServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -51,7 +104,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595534866992</updated>
-      <workItem from="1595534869987" duration="829000" />
+      <workItem from="1595534869987" duration="2319000" />
+      <workItem from="1595603756903" duration="3898000" />
+      <workItem from="1595697107619" duration="3891000" />
+      <workItem from="1595761663778" duration="3837000" />
+      <workItem from="1595951904092" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0. The project is created and configured.">
       <created>1595535041387</created>
@@ -76,9 +133,64 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version 0.0. The project is created and configured." />
     <option name="LAST_COMMIT_MESSAGE" value="Version 0.0. The project is created and configured." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="35" y="0" key="#Project_Structure" timestamp="1595765478072">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="35" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1595765478072" />
+    <state x="133" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595762625343">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="133" y="30" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1595762625343" />
+    <state x="310" y="95" key="#com.intellij.ide.util.ExportDialog" timestamp="1595709034346">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="310" y="95" key="#com.intellij.ide.util.ExportDialog/0.0.1366.768@0.0.1366.768" timestamp="1595709034346" />
+    <state x="441" y="22" key="#com.intellij.ide.util.MemberChooser" timestamp="1595620296687">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="441" y="22" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595620296687" />
+    <state x="346" y="124" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595765534575">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="124" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1595765534575" />
+    <state x="445" y="80" key="FileChooserDialogImpl" timestamp="1595765563586">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="445" y="80" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595765563586" />
+    <state width="1311" height="154" key="GridCell.Tab.0.bottom" timestamp="1595767010584">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1311" height="154" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595767010584" />
+    <state width="1311" height="154" key="GridCell.Tab.0.center" timestamp="1595767010583">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1311" height="154" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595767010583" />
+    <state width="1311" height="154" key="GridCell.Tab.0.left" timestamp="1595767010583">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1311" height="154" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595767010583" />
+    <state width="1311" height="154" key="GridCell.Tab.0.right" timestamp="1595767010583">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1311" height="154" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595767010583" />
+    <state x="70" y="0" key="SettingsEditor" timestamp="1595765581402">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="70" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595765581402" />
+    <state x="464" y="147" key="chooseDestDirectoryDialog" timestamp="1595762443902">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="464" y="147" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595762443902" />
+    <state x="255" y="168" key="run.anything.popup" timestamp="1595709220216">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="255" y="168" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1595709220216" />
   </component>
 </project>

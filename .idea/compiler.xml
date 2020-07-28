@@ -9,5 +9,6 @@
         <module name="WebServerJava" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="14" />
   </component>
 </project>
