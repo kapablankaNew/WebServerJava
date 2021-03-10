@@ -1,22 +1,36 @@
 package org.kapablankaNew.simpleWebServer;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class AccountService {
     private final Connection connection;
 
-    String URL = "jdbc:postgresql://localhost:5432/webserver";
-    String drv = "org.postgresql.Driver";
+    private final String URL;
+    private final String drv;
+    private final String user;
+    private final String password;
 
     public AccountService() throws ClassNotFoundException, NoSuchMethodException,
             InvocationTargetException, InstantiationException, IllegalAccessException,
-            SQLException {
+            SQLException, IOException {
+
+        Properties prop = new Properties();
+        prop.load(new FileReader("database.properties"));
+        URL = prop.getProperty("URL");
+        drv = prop.getProperty("driver");
+        user = prop.getProperty("user");
+        password = prop.getProperty("password");
+
         Driver driver = (Driver)Class.forName(drv).getDeclaredConstructor().newInstance();
         DriverManager.registerDriver(driver);
-        connection = DriverManager.getConnection(URL, "postgres", "postgres");
+        connection = DriverManager.getConnection(URL, user, password);
     }
 
     public void addUser(UserProfile userProfile) throws SQLException {
