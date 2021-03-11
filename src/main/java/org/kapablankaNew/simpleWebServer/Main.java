@@ -3,16 +3,15 @@ package org.kapablankaNew.simpleWebServer;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-
-import java.io.FileWriter;
-import java.util.Objects;
-import java.util.Properties;
+import org.kapablankaNew.simpleWebServer.dao.UsersDAO;
+import org.kapablankaNew.simpleWebServer.servlets.SignInServlet;
+import org.kapablankaNew.simpleWebServer.servlets.SignUpServlet;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        AccountService accountService = new AccountService();
-        SignInServlet signInServlet = new SignInServlet(accountService);
-        SignUpServlet signUpServlet = new SignUpServlet(accountService);
+        UsersDAO dao = new UsersDAO();
+        SignInServlet signInServlet = new SignInServlet(dao);
+        SignUpServlet signUpServlet = new SignUpServlet(dao);
 
         //Server - main class of the library jetty
         //now address: http://localhost:8080/
@@ -28,7 +27,6 @@ public class Main {
 
         server.start();
         System.out.println("Server started");
-        server.stop();
-        //server.join();
+        server.join();
     }
 }

@@ -1,4 +1,4 @@
-package org.kapablankaNew.simpleWebServer;
+package org.kapablankaNew.simpleWebServer.entities;
 
 public class UserProfile {
     private final String login;

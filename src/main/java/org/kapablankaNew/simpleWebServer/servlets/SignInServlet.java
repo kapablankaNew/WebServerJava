@@ -1,4 +1,7 @@
-package org.kapablankaNew.simpleWebServer;
+package org.kapablankaNew.simpleWebServer.servlets;
+
+import org.kapablankaNew.simpleWebServer.dao.UsersDAO;
+import org.kapablankaNew.simpleWebServer.entities.UserProfile;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -7,11 +10,12 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class SignInServlet extends HttpServlet {
-    private final AccountService accountService;
 
-    public SignInServlet(AccountService accountService) {
+    private final UsersDAO dao;
+
+    public SignInServlet(UsersDAO dao) {
         super();
-        this.accountService = accountService;
+        this.dao = dao;
     }
 
     @Override
@@ -19,8 +23,8 @@ public class SignInServlet extends HttpServlet {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         try {
-            if (accountService.isUserAuthorized(login)) {
-                UserProfile profile = accountService.getUserProfile(login);
+            if (dao.haveUser(login)) {
+                UserProfile profile = dao.getUserByLogin(login);
                 if (profile.getPassword().equals(password)) {
                     resp.setStatus(200);
                     resp.getWriter().println("Authorized: " + login);
@@ -33,8 +37,8 @@ public class SignInServlet extends HttpServlet {
                 resp.setStatus(401);
                 resp.getWriter().println("Unauthorized");
             }
-        } catch (SQLException throwable) {
-            throwable.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }
